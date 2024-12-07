@@ -37,8 +37,27 @@ body{
     border-left:3px solid blueviolet ;
     box-shadow:0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
+.hidden{
+    display: none;
+}
+.form-wrapper{
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    border-radius:  10px;
+}
+.hint{
+    margin-top: 5px;
+    opacity: 0.6;
+    line-height: 1.5;
+    font-size: 12px;
+  
+  }
+
 header{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    
 }
 
 h1{
@@ -52,14 +71,10 @@ h3{
     text-align: center;
 }
 form{
-    padding: 30px;
-    background-color: whitesmoke;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-    border-radius:  10px;
-    margin-bottom: 30px;
     display: flex;
-   gap: 6px;
+    gap: 6px;
 }
+
 footer{
     text-align: center;
     font-size: 13px;

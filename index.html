@@ -12,14 +12,18 @@
     <div class="container">
     <header>
     <h1>Welcome to the AI Dictionary </h1>
-    <h3>Hi I'm ai dico, i give definition in any language. try me👇</h3>
+    <h3>Hi👋, I'm ai dico, i give definition in any language. try me👇</h3>
    </header>
    <main>
+    <div class="form-wrapper">
         <form id="definition-generator-form">
             <input type="text" placeholder="Enter the word you are curious about" autofocus required autocomplete="off" class="user-input" id="user-input"/>
             <input type="submit" class="submit-button" value="Submit"/>
+            
         </form>
-        <div class="definition" id="definition">
+        <div class="hint"> i.e: "Schule", "Sapato" or "une sourie"</div>
+    </div>
+        <div class="definition hidden" id="definition">
         </div>
    </main>
 </div>

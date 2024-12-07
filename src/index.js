@@ -5,10 +5,13 @@ function generateDefination(event){
     let apikey ="1b3cfb66ad014a3fo55df2e890f445t9";
     
     let prompt = `user instructions: Generate a short and precise definition of the ${userInputValue.value}`;
-    let context= `You are an universal Dictionary.please identify first the language of ${userInputValue.value}. Then make sure to follow the user instructions. provide a precise title about the language you are about to use for the definition. make sure to give the definition in both english and then in the language of ${userInputValue.value}. please don't write about html just display in basic html.`;
+    let context= `You are an universal Dictionary.please identify first the language of ${userInputValue.value}. Then make sure to follow the user instructions. provide a precise title about the language you are about to use for the definition. make sure to give the definition in both english and then in the language of ${userInputValue.value}. please ensure to  display in basic html.`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
     
-   //clear the previous definition to prevent overlap
+    //default display structure
+    let definitionElement= document.querySelector("#definition");
+    definitionElement.classList.remove("hidden");
+    //clear the previous definition to prevent overlap
     let inputRemover = document.querySelector("#definition");
     inputRemover.innerHTML="";
    //show the result
