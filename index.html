@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
     <title>My Ai Dictionary</title>
 </head>
@@ -11,15 +12,14 @@
     <div class="container">
     <header>
     <h1>Welcome to the AI Dictionary </h1>
+    <h3>Hi I'm ai dico, i give definition in any language. try me👇</h3>
    </header>
    <main>
         <form id="definition-generator-form">
-            <input type="text" placeholder="Enter the word you are curious about" autofocus required autocomplete="off" class="user-input"/>
+            <input type="text" placeholder="Enter the word you are curious about" autofocus required autocomplete="off" class="user-input" id="user-input"/>
             <input type="submit" class="submit-button"/>
         </form>
         <div class="definition" id="definition">
-       
-        
         </div>
    </main>
 </div>
