@@ -8,7 +8,7 @@ function generateDefination(event){
     let context= `You are an universal Dictionary.please identify first the language of ${userInputValue.value}. Then make sure to follow the user instructions.
      provide a precise title about which language you are using for the definition. 
      make sure to give the definition in both english and then in the language of ${userInputValue.value}. if the language of ${userInputValue.value} is already in english only provide the definition in english. 
-     please ensure to only display in basic html.`;
+     please ensure to only display in basic html. make sure to not write anything html`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`;
     
     //show the loading emoji with animation
